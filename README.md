@@ -158,7 +158,7 @@ curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi
 sudo apt-get install golang
 git clone https://github.com/Tmaxxrox97/ha-gosenseapp
-
+cd ha-gosenseapp
 
 cd cmd
 env GOARCH=arm GOARM=5 GOOS=linux go build -o gosenseapp
