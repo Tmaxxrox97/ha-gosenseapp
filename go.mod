@@ -1,4 +1,4 @@
-module github.com/tmaxxrox97/ha-gosenseapp
+module github.com/Tmaxxrox97/ha-gosenseapp
 
 go 1.12
 
