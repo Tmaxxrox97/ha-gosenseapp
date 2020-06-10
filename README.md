@@ -150,6 +150,22 @@ cd ..
 sudo docker build -t dariob/gosenseapp:latest -f docker/Dockerfile .
 ````
 
+# Raspberry PI 
+
+````
+Build Raspberry Pi Docker Image
+
+sudo apt-get install golang
+
+
+cd cmd
+env GOARCH=arm GOARM=5 GOOS=linux go build -o gosenseapp
+#scp gosenseapp rasp:~/gosenseapp
+
+cd ..
+sudo docker build -t dariob/gosenseapp-pi:latest -f docker/Dockerfile .
+
+````
 Run on Raspberry PI
 
 Please notice the --privileged flag needs to be passed in order to be able to access the host device.
@@ -176,17 +192,5 @@ INFO[0008] LOG: time=14 Jul 19 01:05 +0000, data=�77793E5A
                                                             
 INFO[0008] ALARM: time=14 Jul 19 01:05 +0000, mac: 77793E5A, type: 1, battery: 97, signal: 82, state: 0, data=61000100000b52 
 INFO[0008] ALARM: 77793E5A, state: 0                    
-
-````
-
-# Raspberry PI 
-
-````
-cd cmd
-env GOARCH=arm GOARM=5 GOOS=linux go build -o gosenseapp
-#scp gosenseapp rasp:~/gosenseapp
-
-cd ..
-sudo docker build -t dariob/gosenseapp-pi:latest -f docker/Dockerfile .
 
 ````
