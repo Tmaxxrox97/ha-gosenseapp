@@ -13,4 +13,4 @@ require (
 	gopkg.in/yaml.v2 v2.2.2
 )
 
-replace github.com/dariopb/gosense => ../gosense
+replace github.com/dariopb/gosense => ../ha-gosenseapp
