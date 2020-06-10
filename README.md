@@ -159,11 +159,12 @@ sudo usermod -aG docker pi
 sudo apt-get install golang
 git clone https://github.com/Tmaxxrox97/ha-gosenseapp
 cd ha-gosenseapp
-git clone https://github.com/Tmaxxrox97/ha-gosenseapp ~/go/src/github.com/Tmaxxrox97/ha-gosense
+git clone https://github.com/Tmaxxrox97/ha-gosenseapp ~/go/src/github.com/Tmaxxrox97/ha-gosenseapp
 
 
 cd cmd
 go get ./...
+go get github.com/Tmaxxrox97/ha-gosenseapp
 env GOARCH=arm GOARM=5 GOOS=linux go build -o gosenseapp
 #scp gosenseapp rasp:~/gosenseapp
 
