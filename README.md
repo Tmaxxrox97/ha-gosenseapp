@@ -152,9 +152,8 @@ sudo docker build -t dariob/gosenseapp:latest -f docker/Dockerfile .
 
 # Raspberry PI 
 
-````
 Build Raspberry Pi Docker Image
-
+````
 sudo apt-get install golang
 
 
