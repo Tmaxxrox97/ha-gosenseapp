@@ -158,18 +158,13 @@ curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi
 sudo apt-get install golang
 git clone https://github.com/Tmaxxrox97/ha-gosenseapp
+git clone https://github.com/Tmaxxrox97/gosense
 cd ha-gosenseapp
-git clone https://github.com/Tmaxxrox97/ha-gosenseapp ~/go/src/github.com/Tmaxxrox97/ha-gosenseapp
-
 
 cd cmd
-go get ./...
-go get github.com/Tmaxxrox97/ha-gosenseapp
 env GOARCH=arm GOARM=5 GOOS=linux go build -o gosenseapp
-#scp gosenseapp rasp:~/gosenseapp
-
 cd ..
-sudo docker build -t dariob/gosenseapp-pi:latest -f docker/Dockerfile .
+sudo docker build -t Tmaxxrox97/ha-gosenseapp-pi:latest -f docker/Dockerfile .
 
 ````
 Run on Raspberry PI
