@@ -14,7 +14,7 @@ import (
 	"syscall"
 	"time"
 
-	gosense "github.com/Tmaxxrox97/ha-gosenseapp"
+	gosense "github.com/Tmaxxrox97/gosense"
 	log "github.com/sirupsen/logrus"
 )
 
