@@ -49,14 +49,14 @@ Linux
 
 ````
 # Create a config file as above and then mount that file to /app.yaml :
-sudo docker run -it --rm --net host -v /home/xxxx/gosenseapp/app.yaml:/app.yaml --privileged dariob/gosenseapp:latest
+sudo docker run -it --rm --net host -v /home/xxxx/ha-gosenseapp/app.yaml:/app.yaml --privileged tmaxxrox97/ha-gosenseapp:latest
 ````
 
 Raspberry PI 
 
 ````
 # Create a config file as above and then mount that file:
-sudo docker run -it --rm --net host -v /home/pi/gosenseapp/app.yaml:/app.yaml --privileged dariob/gosenseapp-pi:latest
+sudo docker run -it --rm --net host -v /home/pi/ha-gosenseapp/app.yaml:/app.yaml --privileged tmaxxrox97/ha-gosenseapp-pi:latest
 ````
 
 
@@ -171,7 +171,7 @@ Run on Raspberry PI
 
 Please notice the --privileged flag needs to be passed in order to be able to access the host device.
 ````
-root@rasp1:/home/pi/gosenseapp# docker run -it --rm --net host -v /home/pi/gosenseapp/app.yaml:/app.yaml --privileged dariob/gosenseapp-pi:latest
+root@rasp1:/home/pi/gosenseapp# docker run -it --rm --net host -v /home/pi/ha-gosenseapp/app.yaml:/app.yaml --privileged tmaxxrox97/ha-gosenseapp-pi:latest
 Unable to find image 'dariob/gosenseapp-pi:latest' locally
 latest: Pulling from dariob/gosenseapp-pi
 13ee9c2f1d69: Pull complete 
