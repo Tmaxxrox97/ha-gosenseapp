@@ -164,7 +164,7 @@ cd ha-gosenseapp
 cd cmd
 env GOARCH=arm GOARM=5 GOOS=linux go build -o gosenseapp
 cd ..
-sudo docker build -t Tmaxxrox97/ha-gosenseapp-pi:latest -f docker/Dockerfile .
+sudo docker build -t tmaxxrox97/ha-gosenseapp-pi:latest -f docker/Dockerfile .
 
 ````
 Run on Raspberry PI
