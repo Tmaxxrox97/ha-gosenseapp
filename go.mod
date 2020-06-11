@@ -1,9 +1,9 @@
-module github.com/Tmaxxrox97/ha-gosenseapp
+module github.com/tmaxxrox97/ha-gosenseapp
 
 go 1.12
 
 require (
-	github.com/dariopb/gosense v0.0.0-00010101000000-000000000000
+	github.com/tmaxxrox97/gosense@master
 	github.com/eclipse/paho.mqtt.golang v1.2.0
 	github.com/fatih/structs v1.1.0
 	github.com/gorilla/websocket v1.4.0
@@ -13,4 +13,4 @@ require (
 	gopkg.in/yaml.v2 v2.2.2
 )
 
-replace github.com/dariopb/gosense => ../gosense
+replace github.com/tmaxxrox97/gosense => ../gosense
