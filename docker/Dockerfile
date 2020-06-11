@@ -1,5 +1,5 @@
 FROM scratch
-ADD cmd/gosenseapp /gosenseapp
+ADD cmd/ha-gosenseapp /ha-gosenseapp
 
-ENTRYPOINT ["/gosenseapp"]
+ENTRYPOINT ["/ha-gosenseapp"]
 
